@@ -1,4 +1,4 @@
-function createUi(game) {
+export function createUi(game) {
   const introElement = document.querySelector('#intro');
   const uiElement = document.querySelector('#ui');
   const speedElement = document.querySelector('#speed');

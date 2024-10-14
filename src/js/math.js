@@ -1,5 +1,5 @@
 
-function multiplyMatrices(a, b) {
+export function multiplyMatrices(a, b) {
   const result = new Float32Array(16);
   for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
@@ -12,7 +12,7 @@ function multiplyMatrices(a, b) {
   return result;
 }
 
-function perspectiveMatrix(fov, aspect, near, far) {
+export function perspectiveMatrix(fov, aspect, near, far) {
   const f = 1.0 / Math.tan(fov / 2);
   const nf = 1 / (near - far);
   return new Float32Array([
@@ -23,7 +23,7 @@ function perspectiveMatrix(fov, aspect, near, far) {
   ]);
 }
 
-function lookAtMatrix(eye, target, up) {
+export function lookAtMatrix(eye, target, up) {
   const zAxis = normalize(subtractVectors(eye, target));
   const xAxis = normalize(cross(up, zAxis));
   const yAxis = cross(zAxis, xAxis);
@@ -105,6 +105,6 @@ function quickEase(x) {
   return Math.sin(Math.PI * x);
 }
 
-function easePolate(a, b, x) {
+export function easePolate(a, b, x) {
   return lerp(a, b, quickEase(x));
 }

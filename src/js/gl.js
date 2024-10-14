@@ -1,4 +1,4 @@
-function createGl(game) {
+export function createGl(game) {
   const gl = game.canvas.getContext('webgl2');
   gl.enable(gl.DEPTH_TEST);
   gl.enable(gl.BLEND);

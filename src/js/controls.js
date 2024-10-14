@@ -1,4 +1,4 @@
-function createControls(game) {
+export function createControls(game) {
   var interacted = false;
 
   const controls = {

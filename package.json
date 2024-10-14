@@ -4,10 +4,11 @@
   "description": "JS13K entry",
   "main": "index.js",
   "scripts": {
-    "serve": "serve -p 1234 dist",
-    "watch": "watch \"node build.js\" src",
-    "dev": "concurrently \"npm:serve\" \"npm:watch\"",
-    "build": "node build.js prod"
+    "start": "vite --port 3000",
+    "emulator": "concurrently \"npm start\" \"webxdc-dev run http://localhost:3000\"",
+    "fix": "prettier --write .",
+    "check": "prettier --check .",
+    "build": "vite build"
   },
   "keywords": [
     "game",
@@ -16,14 +17,11 @@
   ],
   "author": "Charlie Norin",
   "license": "ISC",
-  "dependencies": {
-    "glob": "11.0.0",
-    "clean-css-cli": "^4.3.0",
-    "concurrently": "^8.2.1",
-    "filesize": "^4.1.2",
-    "google-closure-compiler": "20240317.0.0",
-    "jszip": "^3.2.2",
-    "serve": "^14.2.1",
-    "watch": "^0.13.0"
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.8",
+    "webxdc-dev": "^0.17.0",
+    "webxdc-vite-plugins": "github:webxdc/webxdc-vite-plugins#0.3.0"
   }
 }

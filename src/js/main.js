@@ -1,3 +1,16 @@
+import {createGl} from "./gl.js";
+import {createMusic} from "./music.js";
+import {createColors} from "./colors.js";
+import {createPlayer} from "./player.js";
+import {createTrack} from "./track.js";
+import {createBoxRenderer} from "./box-renderer.js";
+import {createPostProcess} from "./post-process.js";
+import {createPowerups} from "./powerups.js";
+import {createControls} from "./controls.js";
+import {createOpponents} from "./opponents.js";
+import {createUi} from "./ui.js";
+import {createRace} from "./race.js";
+
 function main() {
   const game = {
     canvas: document.getElementById('glcanvas'),
@@ -102,4 +115,6 @@ function main() {
   document.getElementById('glcanvas').addEventListener('click', game.music.connectContext);
 }
 
+
+document.getElementById('body').classList.remove("hidden");
 main();

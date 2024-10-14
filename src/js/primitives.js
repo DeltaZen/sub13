@@ -1,4 +1,4 @@
-const cube = {
+export const cube = {
   positions: new Float32Array([
     // Front face
     -1, -1, 1,

@@ -1,4 +1,4 @@
-function createMusic(game) {
+export function createMusic(game) {
   const levels = {
     bass: 0,
     synth: 0,

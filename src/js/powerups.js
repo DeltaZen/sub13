@@ -1,4 +1,6 @@
-function createPowerups(game) {
+import {randomFloatBetween, randomIntBetween} from "./utils.js";
+
+export function createPowerups(game) {
   const powerups = {
     distances: [
       randomFloatBetween(5, 30),

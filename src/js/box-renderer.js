@@ -1,4 +1,8 @@
-function createBoxRenderer(game) {
+import {cube} from "./primitives.js";
+import {randomFloatBetween} from "./utils.js";
+import {multiplyMatrices, perspectiveMatrix, lookAtMatrix} from "./math.js";
+
+export function createBoxRenderer(game) {
   const boxRenderer = {
     timeMod: 0,
   };

@@ -1,4 +1,4 @@
-function createColors(game) {
+export function createColors(game) {
   const bodyEl = document.getElementById('body');
 
   var target;

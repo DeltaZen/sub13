@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <style>
+     .hidden { display: none; }
+    </style>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="webxdc.js"></script>
+  </head>
+  <body id="body" class="hidden">
+    <canvas id="glcanvas"></canvas>
+    <div id="intro">
+      <div id="logo">
+        <div id="log1" class="t h">SUB</div>
+        <div id="log2" class="t h">13</div>
+      </div>
+      <div id="exp" class="box t">
+        ► Race ahead of the competition<br /><br />
+        ► Your speed is constantly decreasing<br /><br />
+        ► Build up speed by picking up <b>boosts</b><br /><br />
+        ► If a <b>boost</b> takes you over <b>12</b> speed, you <b>lose</b> it
+        instead<br /><br />
+        ► Use sound<br /><br /><br />
+        <div id="start" class="t h">SPACE/TAP: Start</div>
+      </div>
+      <div id="bl" class="t">
+        A JS13K entry by <b>Charlie Norin</b> and <b>Felix Magnell</b>
+      </div>
+    </div>
+    <div id="outro">
+      <div id="op" class="t h">5th</div>
+      <div id="out" class="box">
+        <div id="ot" class="t">Could be worse, but not by a lot. Go again!</div>
+        <div id="retry" class="t h">SPACE/TAP: Restart</div>
+      </div>
+    </div>
+    <div id="ui">
+      <div id="top">
+        <div id="speed"></div>
+      </div>
+      <div id="left">
+        <div id="minimap">
+          <div id="pm"></div>
+          <div id="lm"></div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="time" class="t">
+          <div class="h">60</div>
+          s
+        </div>
+        <div id="place" class="t">
+          <div class="h">5</div>
+          /5
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

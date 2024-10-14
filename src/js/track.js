@@ -1,4 +1,7 @@
-function createTrack(game) {
+import {easePolate} from "./math.js";
+import {randomFloatBetween} from "./utils.js";
+
+export function createTrack(game) {
   const track = {
     offset: { x: 0, y: 0 },
   };

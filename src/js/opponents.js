@@ -1,4 +1,4 @@
-function createOpponents(game) {
+export function createOpponents(game) {
   const startDistances = [
     1.,
     3.,

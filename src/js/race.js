@@ -1,4 +1,4 @@
-function createRace(game) {
+export function createRace(game) {
   const raceDuration = 90;
   const race = {
     timeLeft: raceDuration,

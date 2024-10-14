@@ -1,4 +1,4 @@
-function createPostProcess(game) {
+export function createPostProcess(game) {
   const _uTexture = 'a';
   const _uResolution = 'b';
   const _uTs = 'c';

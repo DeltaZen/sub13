@@ -1,4 +1,4 @@
-function createPlayer(game) {
+export function createPlayer(game) {
   const player = {
     lane: 0,
     level: 2,
